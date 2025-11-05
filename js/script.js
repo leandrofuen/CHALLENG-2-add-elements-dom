@@ -5,8 +5,32 @@
 
 Al pulsar el botón 'agregar elemento' aparecerá el cuadro de dialogo (`prompt`) y ahí se introducirá el elemento que después aparecerá en la lista.
 
-La estructura ya está creada en el HTML, así solo tendrás que trabajar con JavaScript. */
+La estructura ya está creada en el HTML, así solo tendrás que trabajar con JavaScript.
+
+**PISTA: Aquí hay unos métodos, eventos, propiedades que pueden ser útiles**
+
+- `addEventListener`
+- `getElementById`
+- `createElement`
+- `appendChild`
+
+Si tienes otra solución que no lleve esos elementos, ¡adelante!
+
+Puedes añadir CSS a tu gusto. Si es así, añade un documento CSS y a trabajar ;)
+ */
 
 
 var elemento = prompt("Introduce un elemento")
+var agregar = document.getElementById("agregar")
+var lista = document.getElementById("lista")
+
+agregar.addEventListener("click",funtion(){
+ elemento = prompt("Introduce un elemento")
+
+   
+}
+
+
+)
+
 
