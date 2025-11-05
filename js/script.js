@@ -20,17 +20,41 @@ Puedes añadir CSS a tu gusto. Si es así, añade un documento CSS y a trabajar 
  */
 
 
-var elemento = prompt("Introduce un elemento")
-var agregar = document.getElementById("agregar")
-var lista = document.getElementById("lista")
+/*
+var BOTagregar = document.getElementById("agregar");
 
-agregar.addEventListener("click",funtion(){
- elemento = prompt("Introduce un elemento")
-
-   
-}
+var lista = document.getElementById("lista");
 
 
+BOTagregar.addEventListener("click", function() {
+
+ var elemento = prompt("Introduce tu elemento:");
+   const li = document.createElement("li");
+    li.textContent = elemento;
+
+
+    lista.appendChild(li);
+
+    lista.innerHTML += lista. 
+     }
 )
+;*/
 
+// NO FUNCIONAAAAAA
+// CORRECCION SEGUN LA IA... QUE NO ENTIENDO POR QUE NO FUNCIONA EL MIO
+
+var BOTagregar = document.getElementById("agregar");
+var lista = document.getElementById("lista");
+
+BOTagregar.addEventListener("click", function() {
+  // Pedimos el texto
+  var elemento = prompt("Introduce tu elemento:");
+
+  // Creamos el <li>
+  const li = document.createElement("li");
+  li.textContent = elemento;
+
+  // Lo agregamos a la lista
+  lista.appendChild(li);
+});
 
